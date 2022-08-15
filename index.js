@@ -22,7 +22,7 @@ app.use(body_parser.json())
 app.use('/api/user',Userrouter)
 app.use('/api/auth',Authrouter)
 app.use('/api/product',Productrouter);
-app.use('/api/Cart',Cartrouter)
+// app.use('/api/Cart',Cartrouter)
 app.use('/api/Profile',Profilerouter)
 app.use('/api/Order',Orderrouter)
 app.use('*',Errorrouter)
