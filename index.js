@@ -28,6 +28,7 @@ app.use('/api/Order',Orderrouter)
 app.use('*',Errorrouter)
 app.use('/api/Checkout',Stirpe)
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+const host = '0.0.0.0';
+app.listen(PORT,host, () => {
   console.warn(`App listening on http://localhost:${PORT}`);
 });
